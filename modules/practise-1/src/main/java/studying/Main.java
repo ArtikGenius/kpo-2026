@@ -1,8 +1,8 @@
 package studying;
 
 public class Main {
-    public static void main(String[] args) {
-        var factory = new FactoryAF();
+    static void main() {
+        var factory = new HseCarFactory();
 
         factory.addCar(1);
         factory.addCar(2);
@@ -17,7 +17,7 @@ public class Main {
         System.out.println("== Покупатели до продажи ==");
         factory.printCustomers();
 
-        factory.saleCar();
+        factory.SaleCar();
 
         System.out.println("== Автомобили после продажи ==");
         factory.printCars();
