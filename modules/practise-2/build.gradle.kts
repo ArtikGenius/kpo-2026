@@ -25,3 +25,10 @@ dependencies {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
+tasks.register<JavaExec>("runWithSolid") {
+    group = "application"
+    description = "Запускает демонстрацию варианта с SOLID."
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass = "studying.withsolid.Main"
+}
